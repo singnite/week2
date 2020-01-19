@@ -2,17 +2,21 @@ package card;
 
 /**
  * This class +++Insert Description Here+++
+ *
  * @author nites
  */
+import java.util.*;
+
 public class Card {
 
-    private String suit; // clubs, spades, ...,....
-    private int value; //1-13
-      
-      private String[] SUITS = {"Hearts","Diamonds", "Spades", "Clubs"};
+    private String suit; // Clubs, spades, diamonds, hearts.
+    
+    private int[] value = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}; //1-13
 
-      
-      // FOr encapsulation - use Refractor - Encapslation
+    private String[] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+
+    
+    
     /**
      * @return the suit
      */
@@ -30,14 +34,14 @@ public class Card {
     /**
      * @return the value
      */
-    public int getValue() {
+    public int[] getValue() {
         return value;
     }
 
     /**
      * @param value the value to set
      */
-    public void setValue(int value) {
+    public void setValue(int[] value) {
         this.value = value;
     }
 
@@ -54,10 +58,6 @@ public class Card {
     public void setSUITS(String[] SUITS) {
         this.SUITS = SUITS;
     }
-   
 
-      }
-         
-     
     
-
+}
