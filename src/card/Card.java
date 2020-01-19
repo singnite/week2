@@ -15,7 +15,17 @@ public class Card {
 
     private String[] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
 
-    
+    // Method for printintg card calculation
+    public void showCard()
+    {
+        for(int i = 0; i<SUITS.length;i++)
+        {
+            for(int j =0;j<value.length;j++)
+            {
+                Syste.out.println(SUITS[i] + value[j]); 
+            }
+        }
+    }
     
     /**
      * @return the suit
