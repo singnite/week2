@@ -11,6 +11,7 @@ public static void main(String[] args) {
     
     // Object
      Card card = new Card();
+     card.showCard();
     
 }
 }

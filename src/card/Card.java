@@ -22,7 +22,7 @@ public class Card {
         {
             for(int j =0;j<value.length;j++)
             {
-                Syste.out.println(SUITS[i] + value[j]); 
+                System.out.println(SUITS[i] + value[j]); 
             }
         }
     }
